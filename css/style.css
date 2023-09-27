@@ -53,6 +53,7 @@ nav a, footer a {
 nav a:hover, footer a:hover {
   background-color: black;
   color: white;
+  box-shadow: 15px 10px 10px rgb(115, 113, 113);
 }
 
 /* All Buttons */
@@ -65,6 +66,8 @@ button {
   background-size: 200% 100%;
   background-position: right;
   transition: all 700ms ease-in-out;
+  border:2px solid white;
+  
 }
 
 button:hover {
@@ -72,6 +75,8 @@ button:hover {
   background-position: left;
   background-color: white;
   color: black;
+  border:2px solid black;
+  box-shadow: 15px 10px 5px rgb(115, 113, 113);
 }
 
 /* Icons */
@@ -87,26 +92,35 @@ button:hover {
 /* Header Starts Here */
 header {
   border-bottom: 3px solid black;
-  width: auto;
-  height: 50vh;
+  width: 100vw;
+  height: 60vh;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 30px 0px;
-
+  background-image: url(/Week-6-Eindopdracht/img/headerImage1.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: center;
 }
+/* header img{
+  opacity: 0.9;
+} */
 
 .headerBoxLeft {
   text-align: center;
   width: 40vw;
   margin: 0 auto;
+  
 }
 
 .headerBtn {
   width: 15%;
   padding: 10px 30px;
   border-radius: 45px 10px;
+  border:1px solid white;
 }
 
 /* sectionOne */
@@ -133,12 +147,15 @@ article {
   flex-direction: column;
   justify-content: space-evenly;
 }
+article:hover{
+  box-shadow: 10px 10px 10px rgb(115, 113, 113);
+  cursor: pointer  ;
+}
 
 article img {
   width: 100%;
   height:300px;
   object-fit: cover;
-  border-radius:4px;
 }
 
 .project{
@@ -151,6 +168,7 @@ article img {
 article button {
   padding: 10px 30px;
   border-radius: 45px 10px;
+
 }
 
 
