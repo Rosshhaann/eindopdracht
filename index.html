@@ -10,8 +10,7 @@
     />
     <title>Opdracht 6</title>
   </head>
-
-  <body>
+ 
     <!-- The Nav starts here -->
     <nav>
       <!-- navBox Left -->
@@ -38,7 +37,7 @@
           voluptatibus amet sint.
         </p>
       </div>
-      <button class="headerBtn">About Me</button>
+      <a class="headerAnchor">About Me</a>
     </header>
     <!-- Header Ends here  -->
 
@@ -65,7 +64,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
                 illum, libero delectus molestias aperiam eaque!
               </p>
-              <button>Bekijk dit Project</button>
+              <a href="">Bekijk dit Project </a>
             </div>
           </article>
 
@@ -83,7 +82,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
                 illum, libero delectus molestias aperiam eaque!
               </p>
-              <button>Bekijk dit Project</button>
+              <a>Bekijk dit Project</a>
             </div>
           </article>
 
@@ -102,7 +101,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
                 illum, libero delectus molestias aperiam eaque!
               </p>
-              <button>Bekijk dit Project</button>
+              <a>Bekijk dit Project</a>
             </div>
           </article>
         </div>
@@ -110,7 +109,50 @@
 
       <!-- sectionTwo for the form -->
       <section id="sectionTwo">
+      
 
+        <h2>Contact Form</h2> 
+        <form action="https://docent.cmi.hr.nl/moora/frontend/send-mail.php" method="POST">
+          
+          
+          <div class="formDiv1">
+            <div class="name-flexbox">
+              <label for="firstName">First Name*</label>
+              <input name="firstName" id="firstName" type="text" placeholder="First Name" required>
+            </div>
+            <div class="name-flexbox">
+              <label for="lastName">Last Name*</label>
+              <input name="lastName" id="lastName" type="text" placeholder="Last Name" required>
+            </div>
+          </div>
+          
+          <label for="email">E-Mail* <input type="email" name="email" id="email" placeholder="E-Mail"required></label>
+
+          <div class="formDiv3">
+            <div class="city-flexbox">
+              <label for="city">Place:</label>
+              <input name="city" id="city" type="text" placeholder="City" required>
+            </div>
+           <div class="city-flexbox" >
+            <label for="birthdate">Birth of Date*</label>
+            <input name="birthdate" id="birthdate" type="date" placeholder="Birth of Date" required>
+           </div>
+            
+            </div>
+          <button>Submit Buton</button>
+     
+          
+
+
+
+
+
+
+
+
+
+          
+        </form>
       </section>
     </main>
     <!-- Main ends Here -->
