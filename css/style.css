@@ -42,6 +42,7 @@ nav img {
   height: 90px;
 }
 
+/* Nav and Footer anchors */
 nav a,
 footer a {
   padding: 0.9rem 2.5rem;
@@ -58,9 +59,10 @@ footer a:hover {
   background-color: black;
   color: white;
   box-shadow: 15px 10px 10px rgb(115, 113, 113);
+  transition: 650ms;
 }
 
-/*  Anchors */
+/*  Headers & Articles anchors */
 header a,
 article a{
   font-weight: bold;
@@ -111,10 +113,10 @@ header {
   justify-content: center;
   align-items: center;
   gap: 30px 0px;
-  background-image: url(/Week-6-Eindopdracht/img/headerImage1.jpg);
+  background:url(/Week-6-Eindopdracht/img/background-images.jpg);
   background-repeat: no-repeat;
   object-fit: cover;
-  background-position: center;
+  background-position: right;
 }
 
 .headerBoxLeft {
@@ -125,7 +127,7 @@ header {
 
 
 
-/* Sections  */
+
 
 /* sectionOne */
 
@@ -180,27 +182,96 @@ article a {
 #sectionTwo {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
- 
+  padding:2% 0%;
+  background:url(/Week-6-Eindopdracht/img/background-images.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: right;
+  color:white;
 }
 
+
+/* Form */
 form{
-  border: 3px solid black;
-
+  min-width:600px;
+  font-weight:700;
+  font-size:1.1rem;
 }
-.formDiv1, .formDiv3  {
-  display: flex;
-  gap: 0 20px;
-}
-
- form input{
-  padding-left:5px;
+form div{
   width:100%;
-  padding:10px;
-  border-radius:5px;
+  gap:0px 15px;
 }
 
+.input-width{
+  display:flex;
+  flex-direction: column;
+}
+.input-width input , .input-width select{
+  width:100%;
+  height:40px;
+  margin:10px 0; 
+  border-radius:5px;
+  padding-left:10px;
+  border: 6px solid white;
+}
+.input-width input:hover, select:hover, textarea:hover {
+  transition: all 500ms ease-in-out;
+  transform: scale(1.1);
+  border:2px solid white;
+}
+/* Tot hier heb ik alles wat te maken heeft met de form, inputs, select etc.. */
+
+/* Div classes van de Form */
+.name-container, .city-container{
+  display:flex;
+}
+.question-box{
+  display:flex;
+  flex-direction: column;
+
+}
+textarea{
+  margin:10px 0;
+  border:2px solid black;
+  border-radius: 5px; 
+}
+
+.newsLetter-options{
+  display:flex;
+  align-items: center;
+  gap:0px 10px;
+  margin:10px 0; 
+}
+
+.checkBox{
+  display:flex;
+  align-items: flex-end;  
+}
+
+form button{
+  font-weight: bold;
+  width: 100%;
+  margin-top:20px;
+  height:40px;
+  color: white;
+  border-radius: 45px 10px;
+  border: 5px solid white;
+  background: linear-gradient(to right, #ffffff 50%, #000000 40%);
+  background-size: 201% 100%;
+  background-position: right;
+  transition: all 750ms ease-in-out;
+  border: 2px solid white;
+  letter-spacing: 2px;
+}
+form button:hover{
+  cursor: pointer;
+  background-position: left;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  box-shadow: 15px 10px 5px rgb(115, 113, 113);
+}
 
 
 

@@ -1,178 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
-    <title>Opdracht 6</title>
-  </head>
- 
-    <!-- The Nav starts here -->
-    <nav>
-      <!-- navBox Left -->
-      <img src="img/logo2.png" alt="logo" id="logo" />
 
-      <!-- navBox Right for flex + padding + background + color -->
-      <div class="navBarRight">
-        <a href="#header">Header </a>
-        <a href="#subHeading">Subheading</a>
-        <a href="#form">Form</a>
-        <a href="#footer">Footer</a>
-      </div>
-    </nav>
-    <!-- The Nav ends here-->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <title>Opdracht 6</title>
+</head>
 
-    <!-- Header Starts here -->
-    <header>
-      <div class="headerBoxLeft">
-        <h1>Portfolio of Roshan</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
-          eveniet! Culpa laboriosam labore architecto id optio a natus cumque
-          provident, earum ipsum, voluptate aspernatur, debitis corrupti aperiam
-          voluptatibus amet sint.
-        </p>
-      </div>
-      <a class="headerAnchor">About Me</a>
-    </header>
-    <!-- Header Ends here  -->
+<!-- The Nav starts here -->
+<nav>
+  <!-- navBox Left -->
+  <img src="img/logo2.png" alt="logo" id="logo" />
 
-    <!-- Main starts here -->
-    <main>
-      <!-- sectionOne Starts here  -->
-      <section id="sectionOne">
-        <h2>My Projects</h2>
+  <!-- navBox Right for flex + padding + background + color -->
+  <div class="navBarRight">
+    <a href="#about-me">About Me </a>
+    <a href="#myProjects">myProjects</a>
+    <a href="#sectionTwo">Form</a>
+    <a href="#footer  ">Footer</a>
+  </div>
+</nav>
+<!-- The Nav ends here-->
 
-        <div class="articleBox">
-          <!-- articleOne -->
-          <article class="articleOne">
-            <img src="img/projectOne.jpg" alt="" />
-            <div class="project One">
-              <h3>Project 1</h3>
-              <div class="icons">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
-                illum, libero delectus molestias aperiam eaque!
-              </p>
-              <a href="">Bekijk dit Project </a>
-            </div>
-          </article>
+<!-- Header Starts here -->
+<header id="about-me">
+  <div class="headerBoxLeft">
+    <h1>Portfolio of Roshan</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+      eveniet! Culpa laboriosam labore architecto id optio a natus cumque
+      provident, earum ipsum, voluptate aspernatur, debitis corrupti aperiam
+      voluptatibus amet sint.
+    </p>
+  </div>
+  <a class="headerAnchor">About Me</a>
+</header>
+<!-- Header Ends here  -->
 
-          <!-- articalTwo -->
-          <article class="articleTwo">
-            <img src="img/projectTwo.jpg" alt="" />
-            <div class="project Two">
-              <h3>Project 2</h3>
-              <div class="icons">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
-                illum, libero delectus molestias aperiam eaque!
-              </p>
-              <a>Bekijk dit Project</a>
-            </div>
-          </article>
+<!-- Main starts here -->
+<main>
+  <!-- sectionOne Starts here  -->
+  <section id="sectionOne">
+    <h2 id="myProjects">My Projects</h2>
 
-          <!-- articalThree -->
-          <article class="articleThree">
-            <img src="img/projectThree.jpg" alt="" />
-            <div class="project Three">
-              <h3>Project 3</h3>
-              <div class="icons">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
-                illum, libero delectus molestias aperiam eaque!
-              </p>
-              <a>Bekijk dit Project</a>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- sectionTwo for the form -->
-      <section id="sectionTwo">
-      
-
-        <h2>Contact Form</h2> 
-        <form action="https://docent.cmi.hr.nl/moora/frontend/send-mail.php" method="POST">
-          
-          
-          <div class="formDiv1">
-            <div class="name-flexbox">
-              <label for="firstName">First Name*</label>
-              <input name="firstName" id="firstName" type="text" placeholder="First Name" required>
-            </div>
-            <div class="name-flexbox">
-              <label for="lastName">Last Name*</label>
-              <input name="lastName" id="lastName" type="text" placeholder="Last Name" required>
-            </div>
+    <div class="articleBox">
+      <!-- articleOne -->
+      <article class="articleOne">
+        <img src="img/projectOne.jpg" alt="" />
+        <div class="project One">
+          <h3>Project 1</h3>
+          <div class="icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
           </div>
-          
-          <label for="email">E-Mail* <input type="email" name="email" id="email" placeholder="E-Mail"required></label>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+            illum, libero delectus molestias aperiam eaque!
+          </p>
+          <a href="">Bekijk dit Project </a>
+        </div>
+      </article>
 
-          <div class="formDiv3">
-            <div class="city-flexbox">
-              <label for="city">Place:</label>
-              <input name="city" id="city" type="text" placeholder="City" required>
-            </div>
-           <div class="city-flexbox" >
+      <!-- articalTwo -->
+      <article class="articleTwo">
+        <img src="img/projectTwo.jpg" alt="" />
+        <div class="project Two">
+          <h3>Project 2</h3>
+          <div class="icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+            illum, libero delectus molestias aperiam eaque!
+          </p>
+          <a>Bekijk dit Project</a>
+        </div>
+      </article>
+
+      <!-- articalThree -->
+      <article class="articleThree">
+        <img src="img/projectThree.jpg" alt="" />
+        <div class="project Three">
+          <h3>Project 3</h3>
+          <div class="icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+            illum, libero delectus molestias aperiam eaque!
+          </p>
+          <a>Bekijk dit Project</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- sectionTwo for the form -->
+  <section id="sectionTwo">
+
+    <h2>Contact Form</h2>
+    <form id="form" action="https://docent.cmi.hr.nl/moora/frontend/send-mail.php" method="POST">
+      <div class="input-width">
+
+        <div class="name-container">
+          <div>
+            <label for="firstName">First Name*</label>
+            <input name="firstName" id="firstName" type="text" placeholder="First Name" required>
+          </div>
+          <div>
+            <label for="surname">Surname*</label>
+            <input name="surname" id="surname" type="text" placeholder="Surname" required>
+          </div>
+        </div>
+
+        <div class="e-mail">
+          <label for="email">E-Mail</label>
+          <input type="email" name="email" id="email" placeholder="E-Mail" required>
+        </div>
+
+        <div class="city-container">
+          <div>
+            <label for="city">City</label>
+            <input name="city" id="city" type="text" placeholder="City" required>
+          </div>
+          <div>
             <label for="birthdate">Birth of Date*</label>
             <input name="birthdate" id="birthdate" type="date" placeholder="Birth of Date" required>
-           </div>
-            
-            </div>
-          <button>Submit Buton</button>
-     
-          
+          </div>
+        </div>
 
+        <div class="subject-container">
+          <label for="subject">Subject</label>
+          <select id="subject" name="subject" required>
+            <option value="">Choose Subject...</option>
+            <option value="0">Inquiries</option>
+            <option value="1">Feedback</option>
+            <option value="2">Job Application</option>
+            <option value="3">Work with Me</option>
+          </select>
+        </div>
 
-
-
-
-
-
-
-
-          
-        </form>
-      </section>
-    </main>
-    <!-- Main ends Here -->
-
-    <!-- Footer Starts here -->
-    <footer>
-      <!-- Left Footer Box -->
-      <div class="footerLeft">
-        <img src="img/logo2.png" alt="" />
-        <p>Copyright 2023 RoshanDev</p>
-        <!-- Socials Icons -->
       </div>
 
-      <!-- Right Footer Box -->
-      <div class="footerRight">
-        <a>Privacyverklaring</a>
-        <a>Algemene voorwaarden</a>
-        <a>Cookiebeleid</a>
-        <a>Contact</a>
+      <div class="question-box">
+        <label for="question"> Your Question ?</label>
+        <textarea name="question" id="question" cols="30" rows="10" placeholder="Ask your questions here..."></textarea>
       </div>
-    </footer>
-  </body>
+
+      <div class="newsLetter">
+        <label for="newsletter">Sign up for our Newsletter !</label>
+        <div class="newsLetter-options">
+          <label for="option">Yes</label><input type="radio" name="option" id="option-yes" value="yes">
+          <label for="option">No</label><input type="radio" name="option" id="option-no" value="no">
+        </div>
+      </div>
+
+      <div class="checkBox">
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <label for="checkbox">I accept the terms and conditions</label>
+      </div>
+      <button>Submit Button</button>
+    </form>
+  </section>
+</main>
+<!-- Main ends Here -->
+
+<!-- Footer Starts here -->
+<footer id="footer">
+  <!-- Left Footer Box -->
+  <div class="footerLeft">
+    <img src="img/logo2.png" alt="" />
+    <p>Copyright 2023 RoshanDev</p>
+  </div>
+
+  <!-- Right Footer Box -->
+  <div class="footerRight">
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms and Conditions</a>
+    <a href="#">Cookie Policy</a>
+    <a href="#">Contact</a>
+  </div>
+</footer>
+</body>
+
 </html>
