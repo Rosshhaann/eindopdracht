@@ -1,11 +1,11 @@
 * {
   box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 body {
   margin: 0px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   color: black;
 
 }
@@ -13,18 +13,22 @@ body {
 p {
   font-weight: 500;
 }
+
 h1 {
   margin-top: 0;
   font-size: 3.5rem;
 }
+
 h2 {
   margin-top: 0;
   font-size: 3rem;
 }
+
 h3 {
   margin-top: 0;
   font-size: 2rem;
 }
+
 /* NavBar */
 nav {
   display: flex;
@@ -64,7 +68,7 @@ footer a:hover {
 
 /*  Headers & Articles anchors */
 header a,
-article a{
+article a {
   font-weight: bold;
   text-align: center;
   letter-spacing: 3px;
@@ -73,7 +77,7 @@ article a{
   background: linear-gradient(to right, #ffffff 50%, #000000 40%);
   background-size: 201% 100%;
   background-position: right;
-  transition: all 750ms ease-in-out;
+  transition: all 650ms ease-in-out;
   border: 2px solid white;
   text-decoration: none;
 }
@@ -113,7 +117,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 30px 0px;
-  background:url(/Week-6-Eindopdracht/img/background-images.jpg);
+  background-image: url(/Week-6-Eindopdracht/img/headerImage1.jpg);
   background-repeat: no-repeat;
   object-fit: cover;
   background-position: right;
@@ -127,11 +131,9 @@ header {
 
 
 
-
-
 /* sectionOne */
 
- #sectionOne{
+#sectionOne {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -139,6 +141,7 @@ header {
   height: auto;
   padding: 4%;
 }
+
 /* Articles */
 .articleBox {
   display: flex;
@@ -154,6 +157,7 @@ article {
   flex-direction: column;
   justify-content: space-between;
 }
+
 article:hover {
   box-shadow: 10px 10px 10px rgb(115, 113, 113);
   cursor: pointer;
@@ -164,15 +168,17 @@ article img {
   height: 300px;
   object-fit: cover;
 }
+
 article a {
   padding: 10px 30px;
   border-radius: 45px 10px;
 }
+
 .project {
   display: flex;
   padding: 30px 20px;
   flex-direction: column;
-  justify-content:space-around;
+  justify-content: space-around;
   border-top: 3px solid black;
 }
 
@@ -183,77 +189,83 @@ article a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding:2% 0%;
-  background:url(/Week-6-Eindopdracht/img/background-images.jpg);
+  padding: 2% 0%;
+  background-image: url(/Week-6-Eindopdracht/img/headerImage1.jpg);
   background-repeat: no-repeat;
   object-fit: cover;
   background-position: right;
-  color:white;
+  color: white;
 }
 
 
 /* Form */
-form{
-  min-width:600px;
-  font-weight:700;
-  font-size:1.1rem;
-}
-form div{
-  width:100%;
-  gap:0px 15px;
+form {
+  min-width: 600px;
+  font-weight: 700;
+  font-size: 1.1rem;
 }
 
-.input-width{
-  display:flex;
+form div {
+  width: 100%;
+  gap: 0px 15px;
+}
+
+.input-width {
+  display: flex;
   flex-direction: column;
 }
-.input-width input , .input-width select{
-  width:100%;
-  height:40px;
-  margin:10px 0; 
-  border-radius:5px;
-  padding-left:10px;
+
+.input-width input, .input-width select {
+  width: 100%;
+  height: 40px;
+  margin: 10px 0;
+  border-radius: 5px;
+  padding-left: 10px;
   border: 6px solid white;
 }
+
 .input-width input:hover, select:hover, textarea:hover {
-  transition: all 500ms ease-in-out;
+  transition: all 650ms ease-in-out;
   transform: scale(1.1);
-  border:2px solid white;
+  border: 2px solid white;
 }
+
 /* Tot hier heb ik alles wat te maken heeft met de form, inputs, select etc.. */
 
 /* Div classes van de Form */
-.name-container, .city-container{
-  display:flex;
+.name-container, .city-container {
+  display: flex;
 }
-.question-box{
-  display:flex;
+
+.question-box {
+  display: flex;
   flex-direction: column;
 
 }
-textarea{
-  margin:10px 0;
-  border:2px solid black;
-  border-radius: 5px; 
+
+textarea {
+  margin: 10px 0;
+  border: 2px solid black;
+  border-radius: 5px;
 }
 
-.newsLetter-options{
-  display:flex;
+.newsLetter-options {
+  display: flex;
   align-items: center;
-  gap:0px 10px;
-  margin:10px 0; 
+  gap: 0px 10px;
+  margin: 10px 0;
 }
 
-.checkBox{
-  display:flex;
-  align-items: flex-end;  
+.checkBox {
+  display: flex;
+  align-items: flex-end;
 }
 
-form button{
+form button {
   font-weight: bold;
   width: 100%;
-  margin-top:20px;
-  height:40px;
+  margin-top: 20px;
+  height: 40px;
   color: white;
   border-radius: 45px 10px;
   border: 5px solid white;
@@ -264,7 +276,8 @@ form button{
   border: 2px solid white;
   letter-spacing: 2px;
 }
-form button:hover{
+
+form button:hover {
   cursor: pointer;
   background-position: left;
   background-color: white;
@@ -283,11 +296,18 @@ footer {
   align-items: center;
   border-top: 3px solid black;
 }
+
+#socials i:hover {
+  transition: 650ms;
+  font-size: 1.6rem;
+}
+
 footer img {
   width: 100%;
-  height:90px;
+  height: 90px;
   object-fit: cover;
 }
+
 .footerRight {
   display: flex;
   gap: 35px;
