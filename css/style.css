@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 body {
@@ -117,7 +118,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 30px 0px;
-  background-image: url(/Week-6-Eindopdracht/img/headerImage1.jpg);
+  background-image: url(/Week-6-Eindopdracht/images/headerImage1.jpg);
   background-repeat: no-repeat;
   object-fit: cover;
   background-position: right;
@@ -145,22 +146,25 @@ header {
 /* Articles */
 .articleBox {
   display: flex;
-  gap: 30px;
+  gap: 0 50px;
 }
 
 article {
   border: 3px solid black;
-  width: 100%;
+  width: 22vw;
   height: auto;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition:ease-in-out 500ms;
 }
 
 article:hover {
-  box-shadow: 10px 10px 10px rgb(115, 113, 113);
+  box-shadow: 10px 10px 20px rgb(115, 113, 113);
   cursor: pointer;
+  transition:ease-in-out 500ms;
+  transform: scale(1.1);
 }
 
 article img {
@@ -190,7 +194,7 @@ article a {
   flex-direction: column;
   align-items: center;
   padding: 2% 0%;
-  background-image: url(/Week-6-Eindopdracht/img/headerImage1.jpg);
+  background-image: url(/Week-6-Eindopdracht/images/headerImage1.jpg);
   background-repeat: no-repeat;
   object-fit: cover;
   background-position: right;
@@ -222,6 +226,7 @@ form div {
   border-radius: 5px;
   padding-left: 10px;
   border: 6px solid white;
+  transition: all 650ms ease-in-out;
 }
 
 .input-width input:hover, select:hover, textarea:hover {
@@ -229,7 +234,6 @@ form div {
   transform: scale(1.1);
   border: 2px solid white;
 }
-
 /* Tot hier heb ik alles wat te maken heeft met de form, inputs, select etc.. */
 
 /* Div classes van de Form */
@@ -247,6 +251,7 @@ textarea {
   margin: 10px 0;
   border: 2px solid black;
   border-radius: 5px;
+  transition: all 650ms ease-in-out;
 }
 
 .newsLetter-options {
