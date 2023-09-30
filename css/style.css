@@ -117,7 +117,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 30px 0px;
-  background-image:url(/Week-6-Eindopdracht/images/background-images2.jpg);
+  background-image:url(/week-6-eindopdracht/images/backgroundimages2.jpg);
   background-repeat: no-repeat;
   object-fit: cover;
   background-position: right;
@@ -191,7 +191,7 @@ article a {
   flex-direction: column;
   align-items: center;
   padding: 2% 0%;
-  background-image:url(/Week-6-Eindopdracht/images/background-images2.jpg);
+  background-image:url(/week-6-eindopdracht/images/backgroundimages2.jpg);
   background-repeat: no-repeat;
   object-fit: cover;
   background-position: right;
